@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1203918668314308}
+  m_IsPrefabParent: 1
+--- !u!1 &1203918668314308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4492836359910548}
+  - component: {fileID: 114664772073437064}
+  - component: {fileID: 114402183517624780}
+  - component: {fileID: 114241861825079594}
+  m_Layer: 0
+  m_Name: WeaponSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4492836359910548
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1203918668314308}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114241861825079594
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1203918668314308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d707fb06d762f496d90c71d435541054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gizmo: weap
+  lineColor: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &114402183517624780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1203918668314308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90574924a5a214b2fa715b25f477ba87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextCheckpoint: []
+  visited: 0
+  prev: {fileID: 0}
+--- !u!114 &114664772073437064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1203918668314308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e4749c325e4422dad5f37f496057e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Weapons:
+  - {fileID: 1663115732417456, guid: d202eaff7c9da449bb5418c6cf86385f, type: 2}
+  - {fileID: 1040213225669778, guid: b10a5e9ad511448b684975da02189cae, type: 2}
+  - {fileID: 1798740346651058, guid: 4fc62a1b388454e7094fc806cbfba9d3, type: 2}
+  - {fileID: 1691739371371440, guid: e52f2563d35b844e5bf68e3881107013, type: 2}
+  - {fileID: 1519142490196228, guid: 248a02962faa5491f9af18d060c2c01a, type: 2}
