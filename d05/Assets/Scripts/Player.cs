@@ -61,7 +61,7 @@ public class Player : MonoBehaviour {
 
     void Update () {
         time += Time.deltaTime;
-        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.Z))
             focus = false;
         else if (Input.GetKeyDown(KeyCode.Space) && !focus)
             FocusOn();
@@ -108,7 +108,7 @@ public class Player : MonoBehaviour {
         tmp.x = Input.GetAxis("Horizontal");
         tmp.y = 0;
         tmp.z = Input.GetAxis("Vertical");
-		if (Input.GetKey(KeyCode.Q))
+		if (Input.GetKey(KeyCode.A))
             tmp.y += -1;
 		if (Input.GetKey(KeyCode.E))
             tmp.y += 1;
