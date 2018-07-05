@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 6a05499940f38404e9a586d0304429e8
-timeCreated: 1528362199
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -172,6 +170,7 @@ ModelImporter:
     13700004: mesh2
     13700006: mesh3
     13700008: mesh4
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -211,6 +210,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
