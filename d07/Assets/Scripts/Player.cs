@@ -86,7 +86,7 @@ public class Player : MonoBehaviour {
         if (Physics.Raycast(camera.transform.position, forward, out hit)) {
             if (hit.collider.gameObject.layer == 9) {
                 Debug.DrawRay(camera.transform.position, forward, Color.green);
-                hit.collider.transform.root.gameObject.GetComponent<Tank>().TakeDamage(5);
+                hit.collider.transform.root.gameObject.GetComponent<Tank>().TakeDamage(5, gameObject);
                 StopAllCoroutines();
                 StartCoroutine(HitFeedback());
             } else {
@@ -108,7 +108,7 @@ public class Player : MonoBehaviour {
                     MusicManager.instance.explosion.Play();
                     GameObject exp = Instantiate(explosionEffect, hit.collider.transform.position, Quaternion.identity);
                     Destroy(exp, exp.GetComponent<ParticleSystem>().main.duration);
-                    hit.collider.transform.root.gameObject.GetComponent<Tank>().TakeDamage(15);
+                    hit.collider.transform.root.gameObject.GetComponent<Tank>().TakeDamage(15, gameObject);
                     StopAllCoroutines();
                     StartCoroutine(HitFeedback());
                 } else {
@@ -140,7 +140,8 @@ public class Player : MonoBehaviour {
         GameObject exp = Instantiate(explosionEffect, transform.position, Quaternion.identity);
         Destroy(exp, exp.GetComponent<ParticleSystem>().main.duration);
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+//        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Application.Quit();
     }
 
     public bool IsDead () {
