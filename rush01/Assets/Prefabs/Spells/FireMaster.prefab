@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1997443287832800}
+  m_IsPrefabParent: 1
+--- !u!1 &1997443287832800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4509732081435846}
+  - component: {fileID: 114687647092859968}
+  m_Layer: 0
+  m_Name: FireMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4509732081435846
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1997443287832800}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 72.10234, y: 16.011623, z: 53.98451}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114687647092859968
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1997443287832800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603a08b1f8d8844a2a06f5bd260a7c61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 7
+  _player: {fileID: 0}
+  _level: 1
+  _target: 0
+  _type: 2
+  _damage: 10
+  _manaCost: 5
+  _cooldown: 1e+22
+  _range: 0
+  _visualEffect: {fileID: 198808171984473498, guid: 04bb701ff281a490eb5e9284909ecb35,
+    type: 2}
+  _duration: 1e+33
+  _tick: 0
+  _requiredLevel: 18
+  _requiredSkills: 0500000006000000
+  _description: 'Increases the power of FIRE.
+
+    BUUUUUUUURN !'

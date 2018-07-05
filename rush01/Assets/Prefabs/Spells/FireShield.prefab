@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1842149692252962}
+  m_IsPrefabParent: 1
+--- !u!1 &1842149692252962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4176193901937888}
+  - component: {fileID: 114185091958189612}
+  m_Layer: 0
+  m_Name: FireShield
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4176193901937888
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1842149692252962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 80.56939, y: 13.881314, z: 16.370943}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114185091958189612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1842149692252962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603a08b1f8d8844a2a06f5bd260a7c61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 6
+  _player: {fileID: 0}
+  _level: 1
+  _target: 1
+  _type: 0
+  _damage: 5
+  _manaCost: 10
+  _cooldown: 4
+  _range: 0
+  _visualEffect: {fileID: 198711567922303140, guid: 2ae32c553ddcc40bfb1ea53723493a7d,
+    type: 2}
+  _duration: 4
+  _tick: 0.1
+  _requiredLevel: 12
+  _requiredSkills: 03000000
+  _description: 'Enwraps you with fire.
+
+    [Tips] Don''t forget the solar cream.'
+  isContineous: 0
