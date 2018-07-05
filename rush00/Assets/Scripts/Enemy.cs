@@ -212,7 +212,7 @@ public class Enemy : MonoBehaviour {
         {
             while (isTracking)
             {
-                if (PlayerTransform != null)
+                if (PlayerTransform == null)
                     break;
                 isBlocked = !isPlayerVisible();
                 if (isBlocked)
