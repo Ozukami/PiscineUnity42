@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Claire
+  - Thomas
+  - John
+  - Ground
+  - BlueExit
+  - YellowExit
+  - RedExit
+  - MovingPlatform
+  - Teleport
+  - Switch
+  - Door
+  - RedDoor
+  - BlueDoor
+  - YellowDoor
+  - Red
+  - Blue
+  - Yellow
+  - Platform
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Player
+  - White
+  - Red
+  - Blue
+  - Yellow
+  - Thomas
+  - John
+  - Claire
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackGround
+    uniqueID: 207509353
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Players
+    uniqueID: 2077528135
+    locked: 0
+  - name: Exit
+    uniqueID: 1025284865
+    locked: 0
